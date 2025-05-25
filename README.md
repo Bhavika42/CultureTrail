@@ -74,7 +74,7 @@ CultureTrail/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/CultureTrail.git
+git clone https://github.com/Bhavika42/CultureTrail.git
 cd CultureTrail
 ```
 
@@ -108,9 +108,9 @@ This project is under the MIT License.
 📫 Connect with Us
 For feedback, collaboration, or just to say hi:
 
-💌 Email: your.email@example.com
+💌 Email: bhavikasehgal2@gmail.com
 
-🐙 GitHub: @yourusername
+🐙 GitHub: @Bhavika42
 
 🌐 Website (coming soon)
 
@@ -118,10 +118,3 @@ For feedback, collaboration, or just to say hi:
 
 ---
 
-### ✅ Tips:
-
-- Replace `"yourusername"` and placeholder links with your actual GitHub and email.
-- Add a screenshot image (`screenshot.png`) inside the `/assets/` folder to show off the UI.
-- If your project is hosted live, include a `🔗 Live Demo` section with the deployed link.
-
-Would you like me to add a "Live Demo", "Changelog", or setup instructions for backend as well?
