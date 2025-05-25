@@ -8,7 +8,12 @@ CultureTrail is an immersive travel and tourism web app that showcases the cultu
 
 ## 📸 Preview
 
-![CultureTrail Screenshot](./assets/screenshot.png)
+![CultureTrail Screenshot](./frontend/src/assets/Screenshot%20(250).png)
+![CultureTrail Screenshot](./frontend/src/assets/Screenshot%20(251).png)
+![CultureTrail Screenshot](./frontend/src/assets/Screenshot%20(252).png)
+![CultureTrail Screenshot](./frontend/src/assets/Screenshot%20(253).png)
+![CultureTrail Screenshot](./frontend/src/assets/Screenshot%20(254).png)
+![CultureTrail Screenshot](./frontend/src/assets/Screenshot%20(255).png)
 
 ---
 
@@ -46,7 +51,6 @@ CultureTrail is an immersive travel and tourism web app that showcases the cultu
 | React Router   |                     |                       |
 
 ---
-
 ## 📂 Folder Structure
 
 CultureTrail/
@@ -62,11 +66,21 @@ CultureTrail/
 ├── package.json
 ├── README.md
 
-yaml
-Copy
-Edit
+---
 
+## CultureTrail Screenshots
 
+Here are some screenshots showcasing different pages and features of CultureTrail:
+
+![Art Gallery interior](frontend/images/Art Gallery interior.jpg)  
+![Indie café](frontend/images/Indie café ☕.jpg)  
+![Latest Stories](frontend/images/Latest_stories.1.jpg)  
+![Map preview of India](frontend/images/Map preview of India.jpg)  
+![Street Musicians](frontend/images/Street Musicians.jpg)  
+![Vibrant street art](frontend/images/Vibrant street art.jpg)  
+![Smaller stories - cafe](frontend/images/smaller stories-cafe.jpg)  
+![Smaller stories - gallery](frontend/images/smaller stories.gallery.jpg)  
+![Smaller stories - music](frontend/images/smaller stories.music.jpg)  
 
 ---
 
