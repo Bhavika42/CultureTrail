@@ -90,17 +90,17 @@ Here are some screenshots showcasing different pages and features of CultureTrai
 ```bash
 git clone https://github.com/yourusername/CultureTrail.git
 cd CultureTrail
+```
 
-2. Install dependencies
-bash
-Copy
-Edit
+### 2. Install dependencies
+```bash
 npm install
-3. Start the development server
-bash
-Copy
-Edit
+```
+
+### 3. Start the development server
+```bash
 npm run dev
+```
 The app will be available at http://localhost:5173.
 
 🤝 Contributing
@@ -129,10 +129,6 @@ For feedback, collaboration, or just to say hi:
 🌐 Website (coming soon)
 
 "Culture is not just history — it's the heartbeat of a place. Let's explore it together."
-
-vbnet
-Copy
-Edit
 
 ---
 
