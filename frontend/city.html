@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>City Explorer - Cultural Gems</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav class="nav-bar fade-in" role="navigation">
+    <ul class="nav-list">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="city.html" class="nav-link active">City Explorer</a></li>
+      <li><a href="my-places.html" class="nav-link">My Places</a></li>
+      <li><a href="add.html" class="nav-link">Add a Place</a></li>
+    </ul>
+  </nav>
+
+  <header class="page-header fade-in">
+    <h1>Discover Rome’s Hidden Spots</h1>
+  </header>
+
+  <section class="filters fade-in" style="text-align:center; margin-bottom: 30px;">
+    <button class="primary-btn" style="margin-right:10px;">CAFES</button>
+    <button class="primary-btn" style="margin-right:10px;">GALLERIES</button>
+    <button class="primary-btn">PERFORMANCE</button>
+  </section>
+
+  <section class="places-list fade-in" style="max-width: 1000px; margin: 0 auto;">
+
+    <div class="main-grid" style="flex-wrap: wrap; gap: 20px;">
+      <!-- Place Card Example -->
+      <div class="card" style="flex: 1 1 300px;">
+        <img src="./images/smaller stories-cafe.jpg" alt="Cafe in Rome" />
+        <h3>Caffè Greco</h3>
+        <p><em>Category:</em> CAFES</p>
+        <p>A historic coffeehouse on Via dei Condotti famous for its artistic patrons.</p>
+      </div>
+
+      <div class="card" style="flex: 1 1 300px;">
+        <img src="./images/Art Gallery interior.jpg" alt="Art Gallery in Rome" />
+        <h3>Galleria Borghese</h3>
+        <p><em>Category:</em> GALLERIES</p>
+        <p>Home to an impressive collection of Renaissance and Baroque art.</p>
+      </div>
+
+      <div class="card" style="flex: 1 1 300px;">
+        <img src="./images/Street Musicians.jpg" alt="Street Performance in India" />
+        <h3>Piazza Navona Performers</h3>
+        <p><em>Category:</em> PERFORMANCE</p>
+        <p>Enjoy talented street musicians and performers in the vibrant square.</p>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top: 30px;">
+      <button class="primary-btn">Sort by Popular</button>
+      <button class="primary-btn" style="margin-left: 10px;">Sort by Nearby</button>
+    </div>
+
+    <section style="margin-top: 40px; text-align: center;">
+      <h3>Map Preview</h3>
+      <img src="./images/Map preview of India.jpg" alt="Map preview of India" style="max-width: 100%; border-radius: 12px;" />
+    </section>
+
+  </section>
+
+  <footer class="footer fade-in">
+    <p>© 2025 Cultural Gems. Crafted with ❤️</p>
+  </footer>
+
+</body>
+</html>

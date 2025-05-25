@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cultural Gems</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navigation header -->
+  <nav class="nav-bar fade-in" role="navigation">
+    <ul class="nav-list">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="city.html" class="nav-link">City Explorer</a></li>
+      <li><a href="my-places.html" class="nav-link">My Places</a></li>
+      <li><a href="add.html" class="nav-link">Add a Place</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main page header section -->
+  <header class="page-header fade-in">
+    <h1>Explore Hidden Cultural Gems</h1>
+    <p>Discover unique spots and experiences in cities around the world</p>
+    <button class="primary-btn" onclick="location.href='city.html'">Browse Places</button>
+  </header>
+
+  <section class="latest-stories fade-in">
+    <h2>Latest Stories</h2>
+    <div class="main-grid">
+      <!-- Left: Featured Story -->
+      <div class="story main-story card">
+        <img src="./images/Vibrant street art.jpg" alt="Murals of Lisbon" />
+        <h3>Mystery Murals of Lisbon</h3>
+        <p>Uncover the vibrant, hidden street art in Lisbon’s alleys</p>
+      </div>
+
+      <!-- Right: Small stories -->
+      <div class="story-thumbnails">
+        <div class="story-item card">
+          <img src="./images/smaller stories-cafe.jpg" alt="Cafe" />
+          <div>
+            <h4>Trastevere Cafe</h4>
+            <span class="tag">CAFES</span>
+          </div>
+        </div>
+        <div class="story-item card">
+          <img src="./images/smaller stories.music.jpg" alt="Musicians" />
+          <div>
+            <h4>Street Musicians</h4>
+            <span class="tag">PERFORMANCE</span>
+          </div>
+        </div>
+        <div class="story-item card">
+          <img src="./images/Art Gallery interior.jpg" alt="Gallery" />
+          <div>
+            <h4>Salon d’Art Nouveau</h4>
+            <span class="tag">GALLERY</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="popular-categories fade-in">
+    <h2>Popular Categories</h2>
+    <div class="categories-grid">
+      <div class="category-card card">☕ Indie café</div>
+      <div class="category-card card">🖼️ Art gallery</div>
+      <div class="category-card card">🎸 Street performance</div>
+    </div>
+  </section>
+
+  <section class="submit-section fade-in">
+    <h2>Share Your Own Cultural Finds</h2>
+    <p>Contribute to the community by adding your favorite spots and experiences</p>
+    <button class="primary-btn" onclick="location.href='add.html'">Submit a Place</button>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer fade-in">
+    <p>© 2025 Cultural Gems. Crafted with ❤️</p>
+  </footer>
+
+</body>
+</html>

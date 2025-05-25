@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Add a New Place - Cultural Gems</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+
+  <nav class="nav-bar fade-in" role="navigation">
+    <ul class="nav-list">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="city.html" class="nav-link">City Explorer</a></li>
+      <li><a href="my-places.html" class="nav-link">My Places</a></li>
+      <li><a href="add.html" class="nav-link active">Add a Place</a></li>
+    </ul>
+  </nav>
+
+  <header class="page-header fade-in" style="text-align:center;">
+    <h1>Submit a New Cultural Gem</h1>
+  </header>
+
+  <section class="form-section fade-in" style="max-width: 600px; margin: 0 auto;">
+    <form id="addPlaceForm" enctype="multipart/form-data">
+      <label for="placeName">Place Name</label><br />
+      <input type="text" id="placeName" name="name" required style="width: 100%; padding: 8px; margin-bottom: 12px; border-radius: 6px; border: none;" />
+
+      <label for="city">City</label><br />
+      <input type="text" id="city" name="city" required style="width: 100%; padding: 8px; margin-bottom: 12px; border-radius: 6px; border: none;" />
+
+      <label for="category">Category</label><br />
+      <select id="category" name="category" required style="width: 100%; padding: 8px; margin-bottom: 12px; border-radius: 6px; border: none;">
+        <option value="" disabled selected>Select category</option>
+        <option value="CAFES">CAFES</option>
+        <option value="GALLERIES">GALLERIES</option>
+        <option value="PERFORMANCE">PERFORMANCE</option>
+      </select>
+
+      <label for="description">Description</label><br />
+      <textarea id="description" name="description" rows="4" required style="width: 100%; padding: 8px; margin-bottom: 12px; border-radius: 6px; border: none;"></textarea>
+
+      <label for="image">Upload Image</label><br />
+      <input type="file" id="image" name="image" accept="image/*" required style="margin-bottom: 20px;" />
+
+      <div id="imagePreview" style="margin-bottom: 20px;"></div>
+
+      <button type="submit" class="primary-btn" style="width: 100%;">Submit</button>
+    </form>
+  </section>
+
+    ...
+  </section>
+
+  <!-- 👇 MOVE THIS SCRIPT HERE -->
+  <script>
+    const form = document.getElementById('addPlaceForm');
+    const imagePreview = document.getElementById('imagePreview');
+
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      const formData = new FormData(form);
+      formData.append('image', document.getElementById('image').files[0]);
+
+      try {
+        const response = await fetch('http://localhost:5000/api/places', {
+          method: 'POST',
+          body: formData
+        });
+
+        const data = await response.json();
+        console.log('Response:', data);
+
+        if (!response.ok) throw new Error(data.error || 'Submission failed');
+
+        alert('Place added successfully!');
+        form.reset();
+        imagePreview.innerHTML = '';
+      } catch (error) {
+        console.error('Error:', error);
+        alert('Error submitting the form: ' + error.message);
+      }
+    });
+
+    document.getElementById('image').addEventListener('change', function () {
+      const file = this.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          imagePreview.innerHTML = '<img src="' + e.target.result + '" alt="Image Preview" style="max-width: 100%; max-height: 200px;" />';
+        };
+        reader.readAsDataURL(file);
+      } else {
+        imagePreview.innerHTML = '';
+      }
+    });
+  </script>
+
+  <footer class="footer fade-in">
+    <p>© 2025 Cultural Gems. Crafted with ❤️</p>
+  </footer>
+
+</body>
+</html>
